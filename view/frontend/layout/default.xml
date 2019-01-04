@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Hashcrypt Technologies
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Hashcrypt.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.hashcrypt.com/license.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Hashcrypt
+ * @package     Hashcrypt_FloatingWidget
+ * @copyright   Copyright (c) 2018 Hashcrypt Technologies (https://www.hashcrypt.com/)
+ * @license     https://www.hashcrypt.com/license.txt
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">    
+    <head>
+        <css src="Hashcrypt_FloatingWidget::css/style.css" />
+     </head> 
+    <body>  
+        <referenceContainer name="before.body.end">
+            <block class="Hashcrypt\FloatingWidget\Block\SaleProduct" template="Hashcrypt_FloatingWidget::widget.phtml" name="before_body_sale_products"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Hashcrypt Technologies
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Hashcrypt.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.hashcrypt.com/license.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Hashcrypt
+ * @package     Hashcrypt_FloatingWidget
+ * @copyright   Copyright (c) 2018 Hashcrypt Technologies (https://www.hashcrypt.com/)
+ * @license     https://www.hashcrypt.com/license.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sale_products>
+            <general>
+                <enable>1</enable>
+                <button_label>Sale Products</button_label>
+                <title>Floating Sale Products</title>
+                <add_to_cart>1</add_to_cart>
+                <type>sale</type>
+            </general>
+        </sale_products>
+    </default>
+</config>

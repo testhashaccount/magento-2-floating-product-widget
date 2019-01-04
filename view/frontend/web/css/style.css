@@ -1,0 +1,133 @@
+.sectional .product-image-photo{
+    width: 45px;
+    position: unset;
+}
+.sectional .product-image-wrapper{
+    padding-bottom: 0 !important;
+    position: unset;
+    height: auto;
+}
+.sectional .product-image-container{
+    width: auto !important;
+}
+.sectional .old-price{
+    display: none;
+}
+.widget-add-cart::before {
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    line-height: 18px;
+    color: #8f8f8f;
+    content: '\e611';
+    font-family: 'luma-icons';
+    margin: 0;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+.sectional .floating-empty{
+    width: 250px;
+    margin: 0;
+}
+.sectional .cutoff {
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    border-color: #46b8da;
+    position: fixed;
+    left: 20px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+    font-weight: 600
+}
+.sectional .widget_icon{
+    width: 120px;
+    height: 15px;
+    bottom: 63px;
+}
+.sectional .widget_label{
+    width: 120px;
+    height: auto;
+    bottom: 30px;
+    padding: 10px 0px;
+}
+
+.sectional .cutoff.uptab {
+    background-color: #E2780B;
+    color: #fff;
+}
+
+.sectional .icon-up-open {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: block;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    height: 8px;
+    width: 8px;
+    margin: 5px auto
+}
+
+.sectional .icon-down-open {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    height: 8px;
+    width: 8px;
+    margin: 0px auto
+}
+
+.sectional {
+    opacity: .7;
+    filter: alpha(opacity=70);
+    position: fixed;
+    left: 20px;
+    bottom: 30px;
+    width: 142px;
+    cursor: pointer;
+    z-index: 99999;
+}
+.sectional.opaque {
+    opacity: 1.0
+}
+.sectional:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100)
+}
+.sectional .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, .2);
+    z-index: 999
+}
+
+.sectional .dropup-content * {
+    color: #000;
+    margin: 0;
+    font-size:15px;
+}
+
+.sectional .header-row {
+    font-size: 13px;
+    text-align: center
+}
+
+.sectional .dropup-content tr td,
+.sectional .dropup-content tr th {
+    padding: 5px;
+    border-top: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.sectional .dropup-content tbody tr:nth-child(2n+1) {
+    background-color: #f2f2f2
+}
