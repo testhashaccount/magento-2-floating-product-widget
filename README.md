@@ -5,8 +5,8 @@ This module creates floating product widget in every page of your Magento store.
 
 * [Sale Products](#sale-products)
 * [Latest Products](#latest-products)
-* [Most Viewed Products](#most-products)
-* [Best seller Products](#best-products)
+* [Most Viewed Products](#most-viewed-products)
+* [Best seller Products](#best-seller-products)
 
 ## Sale Products
 It shows the first five products which have set "Special Price" and "Special Price From". It will calculate countdown timer and display in widget.
@@ -32,10 +32,9 @@ You can install the module by Composer (If your server supports Composer). Pleas
 
 Download the zip file and unzip the plugin. Now create folder app/code/Hashcrypt/FloatingWidget and copy all files which you have downloaded to that folder.
 Now run below commands to install module,
+
 php bin/magento setup:upgrade
 php bin/magento cache:flush
 
 # Configuration
 Go to admin panel > Stores > Configuration > Hashcrypt Technologies > Floating Product Widget
-Enter custom style and script then save the configuration.
-Flush the cache if cache is enabled.
