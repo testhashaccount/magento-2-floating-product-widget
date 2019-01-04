@@ -20,10 +20,10 @@ It shows the first five of the most visiting products.
 ## Best seller Products
 It shows the first five of the top-selling products which is ordered frequently.
 
-# Compatibility
+## Compatibility
 Magento 2.x
 
-# Installation
+## Installation
 -Install by Composer :
 
 You can install the module by Composer (If your server supports Composer). Please go to the Magento folder and run the command: composer require hashcrypt/floating-product-widget
@@ -33,8 +33,10 @@ You can install the module by Composer (If your server supports Composer). Pleas
 Download the zip file and unzip the plugin. Now create folder app/code/Hashcrypt/FloatingWidget and copy all files which you have downloaded to that folder.
 Now run below commands to install module,
 
+``` bash
 php bin/magento setup:upgrade
 php bin/magento cache:flush
+```
 
-# Configuration
+## Configuration
 Go to admin panel > Stores > Configuration > Hashcrypt Technologies > Floating Product Widget
