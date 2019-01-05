@@ -69,7 +69,11 @@ if(isset($css) && $css){
         <table class="table table-striped" style="width: 375px;">
             <thead>
                 <tr>
+                    <?php if($type == 'sale'): ?>
                     <th colspan="4">
+                    <?php else: ?>
+                    <th colspan="3">
+                    <?php endif; ?>
                         <div class="header-row"><strong><?php echo $helper->getGeneralConfig("title"); ?></strong></div>
                     </th>
                 </tr>
@@ -79,7 +83,6 @@ if(isset($css) && $css){
                 <tr>
                   <td> 
                   <?php
-                    // /var_dump($_product->getData());
                     $productImage = $block->getImage($_product, $image);
                     if ($pos != null) {
                         $position = ' style="left:' . $productImage->getWidth() . 'px;'
@@ -94,15 +97,17 @@ if(isset($css) && $css){
                     <a class="detail_links" href="<?php echo $_product->getProductUrl() ?>" ><?php echo $_product->getName() ?></a>
                     <?php /* @escapeNotVerified */ echo $block->getProductPrice($_product) ?>
                   </td>
-                  <td>
-                    <?php if($type == 'sale'): ?>
+                  
+                <?php if($type == 'sale'): ?>
+                <td>
                     <input type="hidden" value="<?php echo $_product->getSpecialToDate(); ?>" class="timer-data" data-id="<?php echo $_product->getSku(); ?>">
                     <div class="timerHolder" id="<?php echo $_product->getSku(); ?>">
                       <span class="line1"></span><br />
                       <span class="line2"></span>
                     </div>
-                    <?php endif; ?>
-                  </td>
+                </td>
+                <?php endif; ?>
+                  
                   <td>
                     <?php if($cart == 1): ?>
                     <div class="actions-primary"<?php echo strpos($pos, $viewMode . '-primary') ? $position : ''; ?>>
@@ -183,7 +188,6 @@ function callback() {
         hours %= 24;
         jQuery("#"+final_elem).find('.line1').html('<strong>'+days+'</strong> days ' + '<strong>'+hours + "</strong> hours");
         jQuery("#"+final_elem).find('.line2').html('<strong>'+minutes+'</strong> mins '+ '<strong>'+seconds + '</strong> seconds');
-        //document.getElementById(final_elem).innerHTML = days + "days " + hours + "h " + minutes + "m " + seconds + "s";
         
     });
     
