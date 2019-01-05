@@ -28,6 +28,30 @@
     text-align: center;
     color: #fff;
 }
+.sectional .action.danger{
+    background: #ed8380;
+    border: 1px solid #ed8380;
+    border-radius: 3px;
+}
+.sectional .action.danger:hover{
+    background: #ea5d59;
+    border: 1px solid #ea5d59;
+}
+.out-of-stock::before {
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8f8f8f;
+    content: '\e602';
+    font-family: 'luma-icons';
+    margin: 0;
+    vertical-align: top;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
 .sectional .floating-empty{
     width: 250px !important;
     margin: 0 !important;
