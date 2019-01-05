@@ -155,3 +155,14 @@
 .sectional .dropup-content tbody tr:nth-child(2n+1) {
     background-color: #f2f2f2
 }
+@media only screen and (max-width: 600px) {
+    .sectional {
+        width: 100%;
+    }
+    .sectional .dropup-content {
+        width: 90%;
+    }
+    .sectional .table-striped{
+        width: 100%;
+    }
+}
